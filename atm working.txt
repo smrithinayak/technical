@@ -1,0 +1,50 @@
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    
+		System.out.println("enter the amount");
+		int amt=sc.nextInt();
+		if(amt%100==0)
+		{
+		    int q=amt/500;
+		    int rem=amt%500;
+		    System.out.println("number of 500 notes require:"+q);
+		    int q1=rem/200;
+		    int rem1=rem%200;
+		    System.out.println("number of 200 notes require:"+q1);
+		    int q2=rem1/100;
+		    int rem2=rem%100;
+		    System.out.println("number of 100 notes require:"+q2);
+		    int q3=rem2/50;
+		    int rem3=rem2%50;
+		    System.out.println("number of 50 notes require:"+q3);
+		    int q4=rem3/20;
+		    int rem4=rem3%20;
+		    System.out.println("number of 20 notes require:"+q4);
+		    int q5=rem4/10;
+		    int rem5=rem4%10;
+		    System.out.println("number of 10 notes require:"+q5);
+		}
+		else
+		{
+		    System.out.println("invalid amt");
+		}
+	
+	}
+}
+
+
+
+output
+enter the amount
+5800
+number of 500 notes require:11
+number of 200 notes require:1
+number of 100 notes require:1
+number of 50 notes require:0
+number of 20 notes require:0
+number of 10 notes require:0
