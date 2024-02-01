@@ -1,0 +1,125 @@
+import java.util.Random;
+import java.util.Scanner; 
+public class Main
+{
+	public static void main(String[] args) {
+	    int s1=0,s2=0,player;
+	    int p1=1;
+	    int p2=2;
+	    Scanner sc=new Scanner(System.in);
+	    Random rand = new Random();
+	    while(true){
+	        System.out.println("enter the player number");
+	       player=sc.nextInt();
+	           if(player==1)
+	    {
+	    int diceRoll = (int)Math.floor(Math.random()*7)+1;
+	     
+	    System.out.println(diceRoll);
+	   
+	    s1=s1+diceRoll;
+	    if(s1==9)
+	    {
+	        s1=s1+20;
+	    }
+	    else if(s1==23)
+	    {
+	        s1=s1+20;
+	    }
+	    else if(s1==45)
+	    {
+	        s1=s1+30;
+	    }
+	    else if(s1==52)
+	    {
+	        s1=s1+30;
+	    }
+	    else if(s1==66)
+	    {
+	        s1=s1+30;
+	    }
+	    else if(s1==98)
+	    {
+	        s1=s1-90;
+	    }
+	    else if(s1==84)
+	    {
+	        s1=s1-60;
+	    }
+	    else if(s1==78)
+	    {
+	        s1=s1-50;
+	    }
+	    else if(s1==42)
+	    {
+	        s1=s1-21;
+	    }
+	    else if(s1==30)
+	    {
+	        s1=s1-25;
+	    }
+	    else if(s1>=100){
+	        System.out.println("the player 1 is the winnner");
+	        break;
+	    }
+	    }
+	           if(player==2)
+	    {
+	    int diceRoll = (int)Math.floor(Math.random()*7)+1;
+	     
+	    System.out.println(diceRoll);
+	   
+	    s2=s2+diceRoll;
+	    if(s2==9)
+	    {
+	        s2=s2+20;
+	    }
+	    else if(s2==23)
+	    {
+	        s2=s2+20;
+	    }
+	    else if(s2==45)
+	    {
+	        s2=s2+30;
+	    }
+	    else if(s2==52)
+	    {
+	        s2=s2+30;
+	    }
+	    else if(s2==66)
+	    {
+	        s2=s2+30;
+	    }
+	    else if(s2==98)
+	    {
+	        s2=s2-90;
+	    }
+	    else if(s2==84)
+	    {
+	        s2=s2-60;
+	    }
+	    else if(s2==78)
+	    {
+	        s2=s2-50;
+	    }
+	    else if(s2==42)
+	    {
+	        s2=s2-21;
+	    }
+	    else if(s2==30)
+	    {
+	        s2=s2-25;
+	    }
+	    else if(s2>=100){
+	        System.out.println("the player 2 is the winnner");
+	        break;
+	    }
+	    
+        }
+        System.out.println("the score of player 1 is"+s1);
+        System.out.println("the score of player 2 is"+s2);
+
+	  
+}
+}
+}
