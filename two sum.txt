@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    
+	    System.out.println("enter the number of elements");
+	    int n=sc.nextInt();
+	    int nums[]=new int[n];
+	   
+	    System.out.println("target element is");
+	    int t=sc.nextInt();
+	    System.out.println("enter the elements");
+	    for(int k=0;k<n;k++)
+	    {
+	     nums[k]=sc.nextInt();
+	    }
+	    for(int i=0;i<n-1;i++)
+	    {
+	        for(int j=i+1;j<n;j++)
+	        {
+	            if(t==nums[i]+nums[j])
+	            {
+	            System.out.print("index is"+i);
+	            System.out.println("index is"+j);
+	            }
+	        }
+	    }
+		
+	}
+}
